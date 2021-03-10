@@ -7,4 +7,10 @@ public class FizzBuzzTest {
         String result = new FizzBuzz().fizzBuzz(1);
         Assertions.assertEquals(1, result);
     }
+
+    @Test
+    public void fizzBuzz_Given5_ShouldBeFizz(){
+        String result = new FizzBuzz().fizzBuzz(5);
+        Assertions.assertEquals(1, result);
+    }
 }

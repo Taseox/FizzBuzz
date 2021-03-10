@@ -1,5 +1,6 @@
 public class FizzBuzz {
-    public String fizzBuzz(int num){
-        return "hello";
+    public String fizzBuzz(int num) {
+        return "5";
     }
 }
+
