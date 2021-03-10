@@ -11,6 +11,24 @@ public class FizzBuzzTest {
     @Test
     public void fizzBuzz_Given5_ShouldBeFizz(){
         String result = new FizzBuzz().fizzBuzz(5);
-        Assertions.assertEquals(1, result);
+        Assertions.assertEquals("Fizz", result);
+    }
+
+    @Test
+    public void fizzBuzz_Given7_ShouldBeBuzz(){
+        String result = new FizzBuzz().fizzBuzz(7);
+        Assertions.assertEquals("Buzz", result);
+    }
+
+    @Test
+    public void fizzBuzz_Given35_ShouldBeFizzBuzz(){
+        String result = new FizzBuzz().fizzBuzz(35);
+        Assertions.assertEquals("FizzBuzz", result);
+    }
+
+    @Test
+    public void fizzBuzz_Given66_ShouldBeFizzBuzz(){
+        String result = new FizzBuzz().fizzBuzz(66);
+        Assertions.assertEquals("FizzBuzz", result);
     }
 }
