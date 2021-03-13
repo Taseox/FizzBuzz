@@ -5,7 +5,7 @@ public class FizzBuzzTest {
     @Test
     public void fizzBuzz_Given1_ShouldBe1(){
         String result = new FizzBuzz().fizzBuzz(1);
-        Assertions.assertEquals(1, result);
+        Assertions.assertEquals("1", result);
     }
 
     @Test
@@ -27,8 +27,13 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void fizzBuzz_Given66_ShouldBeFizzBuzz(){
-        String result = new FizzBuzz().fizzBuzz(66);
+    public void fizzBuzz_Contains66_ShouldBeFizzBuzz(){
+        String result = new FizzBuzz().fizzBuzz(444466);
         Assertions.assertEquals("FizzBuzz", result);
+    }
+    @Test
+    public void fizzBuzz_GivenNegative_ShouldThrowException(){
+        Assertions.assertThrows(Exception.class,
+                () -> new FizzBuzz().fizzBuzz(-50));
     }
 }
